@@ -3,12 +3,13 @@ return {
   opts = {
     ensure_installed = {
       "css-lsp",
+      "graphql-language-services-cli",
       "html-lsp",
-      "stylua",
-      "shfmt",
       "powershell-editor-services",
       "pyright",
-      "graphql-language-server-cli",
+      "shfmt",
+      "stylua",
+      "tailwindcss-language-server",
     },
   },
 }
