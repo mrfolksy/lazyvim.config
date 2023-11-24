@@ -1,3 +1,10 @@
 return {
-  -- TODO - fill this in
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        tailwindcss = {},
+      },
+    },
+  },
 }
