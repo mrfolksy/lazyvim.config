@@ -20,6 +20,7 @@ return {
               },
               workspace = {
                 library = {
+                  vim.env.RUNTIME,
                   vim.fn.expand("~/.luarocks/share/lua/5.1"),
                   "/usr/share/lua/5.1",
                 },
