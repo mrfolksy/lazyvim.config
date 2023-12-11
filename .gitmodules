@@ -1,0 +1,3 @@
+[submodule "dev/plugins/mrfolksy/neo-tree-dotnet"]
+	path = dev/plugins/mrfolksy/neo-tree-dotnet
+	url = git@github.com:mrfolksy/neo-tree-dotnet.git
