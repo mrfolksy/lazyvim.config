@@ -1,10 +1,10 @@
 return {
   {
-    {
-      "ellisonleao/gruvbox.nvim",
-      name = "gruvbox",
-      lazy = false,
-    },
+    "ellisonleao/gruvbox.nvim",
+    name = "gruvbox",
+    lazy = false,
+  },
+  {
     "rebelot/kanagawa.nvim",
     name = "kanagawa",
     lazy = false,
