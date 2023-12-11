@@ -3,7 +3,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        tailwindcss = {},
+        -- lua
         lua_ls = {
           settings = {
             Lua = {
@@ -28,6 +28,8 @@ return {
             },
           },
         },
+        -- tailwind
+        tailwindcss = {},
       },
     },
   },
