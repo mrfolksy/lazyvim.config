@@ -10,6 +10,11 @@ return {
     lazy = false,
   },
   {
+    "Mofiqul/vscode.nvim",
+    name = "vscode",
+    lazy = false,
+  },
+  {
     "bluz71/vim-moonfly-colors",
     name = "moonfly",
     lazy = false,
