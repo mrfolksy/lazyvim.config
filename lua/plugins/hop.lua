@@ -7,10 +7,4 @@ return {
       keys = "etovxqpdygfblzhckisuran",
     })
   end,
-  keys = function()
-    local hop = require("hop")
-    return {
-      {},
-    }
-  end,
 }
