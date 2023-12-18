@@ -8,3 +8,7 @@ map("n", "<leader>Q", "<cmd>qa<cr>", { desc = "Quit All" })
 
 -- buffers
 map("n", "<leader>bt", "<cmd>tab split<cr>", { desc = "Open in new tab" })
+
+-- plugins
+-- hop (kinda annoyed that this doesn't seem to work from the plugin spec file)
+map("", "f", "<cmd>lua require'hop'.hint_char1()<cr>", {})
