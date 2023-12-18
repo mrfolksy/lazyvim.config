@@ -2,3 +2,4 @@
 require("config.lazy")
 require("custom.globals")
 require("custom.utils")
+require("config.snippets")

@@ -2,8 +2,12 @@ local Path = require("plenary.path")
 
 local M = {}
 
+M.get_config_dir = function()
+  return vim.api.nvim_list_runtime_paths()[1]
+end
+
 M.load_dev_plugin = function(name, opts)
-  local mpath = Path:new(vim.api.nvim_list_runtime_paths()[1] .. "/dev/plugins/" .. name)
+  local mpath = Path:new(M.get_config_dir() .. "/dev/plugins/" .. name)
   if mpath:is_dir() then
     return {
       dir = vim.api.nvim_list_runtime_paths()[1] .. "/dev/plugins/" .. name,

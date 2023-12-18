@@ -5,7 +5,12 @@ return {
       {
         "<leader>sB",
         "<cmd>Telescope buffers<cr>",
-        desc = "Find Plugin File",
+        desc = "List Open Buffers",
+      },
+      {
+        "<leader>sf",
+        "<cmd>Telescope find_files<cr>",
+        desc = "Find File",
       },
     },
   },

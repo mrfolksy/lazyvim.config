@@ -1,0 +1,9 @@
+{
+  "File Scope Namespace": {
+    "prefix": "fsns",
+    "body": [
+      "namespace ${1:Name};"
+    ],
+    "description": "File-Scoped Namespace"
+  }
+}
