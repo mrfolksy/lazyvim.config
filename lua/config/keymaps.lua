@@ -12,3 +12,9 @@ map("n", "<leader>bt", "<cmd>tab split<cr>", { desc = "Open in new tab" })
 -- plugins
 -- hop (kinda annoyed that this doesn't seem to work from the plugin spec file)
 map("", "f", "<cmd>lua require'hop'.hint_char1()<cr>", {})
+
+-- harpoon
+map("n", "<leader>m", function()
+  require("harpoon.mark").add_file()
+end)
+map("n", "<leader>sm", "<cmd>Telescope harpoon marks<cr>")
