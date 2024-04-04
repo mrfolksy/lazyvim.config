@@ -24,11 +24,16 @@ return {
     name = "nightfly",
     lazy = false,
   },
+  {
+    "EdenEast/nightfox.nvim",
+    name = "nightfox",
+    lazy = false,
+  },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight-night",
+      colorscheme = "tokyonight",
     },
   },
 }

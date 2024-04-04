@@ -4,11 +4,18 @@ return {
     opts = {
       inlay_hints = { enabled = true },
       servers = {
+        -- deno
+        denols = {
+          root_dir = require("lspconfig").util.root_pattern("deno.json"),
+          settings = {
+            enable = true,
+          },
+        },
         -- lua
         lua_ls = {
           settings = {
             Lua = {
-              hint = { enable = true },
+              hint = { enable = false },
               runtime = {
                 version = "Lua 5.1",
                 path = {
@@ -38,6 +45,11 @@ return {
         },
         -- tailwind
         tailwindcss = {},
+        -- typescript
+        tsserver = {
+          -- root_dir = require("lspconfig").util.root_pattern("package.json"),
+          single_file_support = false,
+        },
       },
     },
   },

@@ -3,7 +3,7 @@ return {
     "nvim-telescope/telescope.nvim",
     keys = {
       {
-        "<leader>sB",
+        "<leader>sb",
         "<cmd>Telescope buffers<cr>",
         desc = "List Open Buffers",
       },
