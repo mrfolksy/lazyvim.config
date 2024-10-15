@@ -3,6 +3,7 @@ return {
   opts = {
     ensure_installed = {
       "css-lsp",
+      "djlint",
       "graphql-language-service-cli",
       "html-lsp",
       "powershell-editor-services",
