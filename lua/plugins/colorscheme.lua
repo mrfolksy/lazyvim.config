@@ -29,11 +29,16 @@ return {
     name = "nightfox",
     lazy = false,
   },
+  {
+    "oxfist/night-owl.nvim",
+    name = "nightowl",
+    lazy = false,
+  },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "night-owl",
     },
   },
 }
