@@ -6,3 +6,5 @@ local opt = vim.opt
 opt.swapfile = false
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.showtabline = 1
+opt.tabline = "%!v:lua.require'config.tabline'.tabline()"

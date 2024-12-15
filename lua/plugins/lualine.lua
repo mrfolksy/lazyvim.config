@@ -9,6 +9,16 @@ return {
       left = "",
       right = "",
     }
+    opts.options.tabline = {
+      lualine_z = {
+        {
+          "tabs",
+          cond = function()
+            return #vim.fn.gettabinfo() > 1
+          end,
+        },
+      },
+    }
     opts.options.theme = "night-owl"
   end,
 }

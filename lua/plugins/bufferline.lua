@@ -1,6 +1,6 @@
 return {
   "akinsho/bufferline.nvim",
-  enabled = true,
+  enabled = false,
   opts = {
     options = {
       buffer_close_icon = "󰅖",
