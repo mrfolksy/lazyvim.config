@@ -19,5 +19,7 @@ map("n", "<leader>m", function()
 end)
 map("n", "<leader>sm", "<cmd>Telescope harpoon marks<cr>")
 
+map("n", "<leader><leader>", "<cmd>Telescope buffers<cr>", { desc = "Find buffer" })
+
 map("n", "<leader>X", ":.lua<CR>")
 map("v", "<leader>X", ":lua<CR>")

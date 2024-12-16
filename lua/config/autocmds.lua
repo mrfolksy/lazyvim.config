@@ -27,7 +27,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 vim.api.nvim_create_autocmd("TermOpen", {
-  group = vim.api.nvim_create_augroup("x-terminal", { clear = true }),
+  group = vim.api.nvim_create_augroup("custom-terminal", { clear = true }),
   callback = function()
     vim.opt.number = false
     vim.opt.relativenumber = false
@@ -36,6 +36,6 @@ vim.api.nvim_create_autocmd("TermOpen", {
 
 vim.api.nvim_create_autocmd("BufRead", {
   pattern = "*.py",
-  group = vim.api.nvim_create_augroup("x-lang-python", { clear = true }),
+  group = vim.api.nvim_create_augroup("custom-lang-python", { clear = true }),
   callback = function() end,
 })
