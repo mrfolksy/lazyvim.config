@@ -18,3 +18,6 @@ map("n", "<leader>m", function()
   require("harpoon.mark").add_file()
 end)
 map("n", "<leader>sm", "<cmd>Telescope harpoon marks<cr>")
+
+map("n", "<leader>X", ":.lua<CR>")
+map("v", "<leader>X", ":lua<CR>")
