@@ -37,5 +37,8 @@ vim.api.nvim_create_autocmd("TermOpen", {
 vim.api.nvim_create_autocmd("BufRead", {
   pattern = "*.py",
   group = vim.api.nvim_create_augroup("custom-lang-python", { clear = true }),
-  callback = function() end,
+  callback = function()
+    vim.wo.foldmethod = "expr"
+    vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+  end,
 })
