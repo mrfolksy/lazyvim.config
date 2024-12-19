@@ -6,6 +6,10 @@ local map = vim.keymap.set
 -- Neovim
 map("n", "<leader>Q", "<cmd>qa<cr>", { desc = "Quit All" })
 
+-- Execute lua code
+map("n", "<leader>X", ":.lua<CR>")
+map("v", "<leader>X", ":lua<CR>")
+
 -- buffers
 map("n", "<leader>bt", "<cmd>tab split<cr>", { desc = "Open in new tab" })
 
@@ -19,7 +23,5 @@ map("n", "<leader>m", function()
 end)
 map("n", "<leader>sm", "<cmd>Telescope harpoon marks<cr>")
 
-map("n", "<leader><leader>", "<cmd>Telescope buffers<cr>", { desc = "Find buffer" })
-
-map("n", "<leader>X", ":.lua<CR>")
-map("v", "<leader>X", ":lua<CR>")
+-- oil
+map("n", "<leader>o", "<cmd>Oil<cr>")
