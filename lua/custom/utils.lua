@@ -45,4 +45,55 @@ M.run_command = function(cmd, callback)
   end)
 end
 
+M.create_floating_window = function(opts)
+  opts = opts or {}
+  local width = opts.width or "80%"
+  local height = opts.height or "80%"
+
+  -- Get editor dimensions
+  local columns = vim.o.columns
+  local lines = vim.o.lines
+  local row = vim.o.lines
+
+  -- Calculate dimensions
+  local win_width = width
+  local win_height = height
+
+  if type(width) == "string" and width:match("%%$") then
+    win_width = math.floor(columns * tonumber(width:match("(%d+)")) / 100)
+  end
+  if type(height) == "string" and height:match("%%$") then
+    win_height = math.floor(lines * tonumber(height:match("(%d+)")) / 100)
+  end
+
+  -- Calculate starting position
+  local row_pos = math.floor((lines - win_height) / 2)
+  local col_pos = math.floor((columns - win_width) / 2)
+
+  -- Create buffer
+  local buf = vim.api.nvim_create_buf(false, true)
+
+  -- Window options
+  local win_opts = {
+    relative = "editor",
+    width = win_width,
+    height = win_height,
+    row = row_pos,
+    col = col_pos,
+    style = "minimal",
+    border = opts.border or "rounded",
+  }
+
+  -- Add title if provided
+  if opts.title then
+    win_opts.title = opts.title
+    win_opts.title_pos = "center"
+  end
+
+  -- Create window
+  local win = vim.api.nvim_open_win(buf, true, win_opts)
+
+  return win, buf
+end
+
 return M
