@@ -25,3 +25,7 @@ map("n", "<leader>sm", "<cmd>Telescope harpoon marks<cr>")
 
 -- oil
 map("n", "<leader>o", "<cmd>Oil<cr>")
+
+-- quickfix list
+map("n", "<leader>cn", "<cmd>cnext<CR>")
+map("n", "<leader>cp", "<cmd>cprev<CR>")
