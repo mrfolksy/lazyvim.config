@@ -19,6 +19,6 @@ return {
         },
       },
     }
-    opts.options.theme = "night-owl"
+    opts.options.theme = "cyberdream"
   end,
 }
