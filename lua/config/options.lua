@@ -11,3 +11,4 @@ opt.showtabline = 1
 opt.tabline = "%!v:lua.require'config.tabline'.tabline()"
 
 g.lazyvim_picker = "telescope"
+g.root_spec = { "cwd" }
