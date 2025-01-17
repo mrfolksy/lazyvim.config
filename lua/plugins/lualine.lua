@@ -19,6 +19,6 @@ return {
         },
       },
     }
-    opts.options.theme = "cyberdream"
+    opts.options.theme = "moonfly"
   end,
 }
