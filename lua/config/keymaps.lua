@@ -18,10 +18,10 @@ map("n", "<leader>bt", "<cmd>tab split<cr>", { desc = "Open in new tab" })
 map("", "f", "<cmd>lua require'hop'.hint_char1()<cr>", {})
 
 -- harpoon
-map("n", "<leader>m", function()
-  require("harpoon.mark").add_file()
-end)
-map("n", "<leader>sm", "<cmd>Telescope harpoon marks<cr>")
+-- map("n", "<leader>m", function()
+--   require("harpoon.mark").add_file()
+-- end)
+-- map("n", "<leader>sm", "<cmd>Telescope harpoon marks<cr>")
 
 -- oil
 map("n", "<leader>o", "<cmd>Oil<cr>")
