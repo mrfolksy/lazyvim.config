@@ -1,6 +1,9 @@
 return {
   {
     "neovim/nvim-lspconfig",
+    dependencies = {
+      "mrfolksy/nvim-json-conf",
+    },
     opts = {
       inlay_hints = { enabled = false },
       servers = {

@@ -19,6 +19,6 @@ return {
         },
       },
     }
-    opts.options.theme = "moonfly"
+    opts.options.theme = "nightfox"
   end,
 }

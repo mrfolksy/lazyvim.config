@@ -11,7 +11,6 @@ return {
       "shfmt",
       "stylua",
       "svelte-language-server",
-      "tailwindcss-language-server",
     },
   },
 }

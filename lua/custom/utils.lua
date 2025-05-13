@@ -20,6 +20,16 @@ M.load_dev_plugin = function(name, opts)
   end
 end
 
+M.load_dev_plugin_path = function(name)
+  local mpath = M.get_config_dir() .. "/dev/plugins/" .. name
+
+  if Path:new(mpath):is_dir() then
+    return mpath
+  else
+    return nil
+  end
+end
+
 M.run_command = function(cmd, callback)
   local uv = vim.uv
   local stdin = uv.new_pipe()
