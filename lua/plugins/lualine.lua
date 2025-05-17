@@ -19,6 +19,6 @@ return {
         },
       },
     }
-    opts.options.theme = "nightfox"
+    opts.options.theme = "duskfox"
   end,
 }

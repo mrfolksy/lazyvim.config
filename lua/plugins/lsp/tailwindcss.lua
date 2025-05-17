@@ -1,4 +1,9 @@
--- ~/.config/nvim/lua/plugins/tailwindcss.lua
+-- This is ripped from the LazyVim defaults for the tailwindcss extra (see link below)
+-- https://www.lazyvim.org/extras/lang/tailwind
+--
+-- the main difference is that we use our custom nvinm-json-conf plugin to read project local
+-- config. I did this so that the tailwindcss lsp would work properly with a tailwindcss v4 project that uses
+-- a css file entry point
 local util = require("lspconfig.util")
 
 return {
