@@ -19,6 +19,6 @@ return {
         },
       },
     }
-    opts.options.theme = "duskfox"
+    opts.options.theme = "catppuccin-mocha"
   end,
 }

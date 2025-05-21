@@ -34,16 +34,21 @@ return {
     name = "nightowl",
     lazy = false,
   },
+  -- {
+  --   "scottmckendry/cyberdream.nvim",
+  --   name = "cyberdream",
+  --   lazy = false,
+  -- },
   {
-    "scottmckendry/cyberdream.nvim",
-    name = "cyberdream",
+    "vague2k/vague.nvim",
+    name = "vague",
     lazy = false,
   },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "duskfox",
+      colorscheme = "catppuccin-mocha",
     },
   },
 }
