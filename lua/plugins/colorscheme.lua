@@ -1,3 +1,4 @@
+
 return {
   {
     "ellisonleao/gruvbox.nvim",
@@ -34,15 +35,21 @@ return {
     name = "nightowl",
     lazy = false,
   },
-  -- {
-  --   "scottmckendry/cyberdream.nvim",
-  --   name = "cyberdream",
-  --   lazy = false,
-  -- },
   {
     "vague2k/vague.nvim",
     name = "vague",
     lazy = false,
+  },
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("catppuccin").setup({
+        flavour = "mocha",
+      })
+    end,
   },
 
   {
