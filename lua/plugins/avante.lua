@@ -1,17 +1,17 @@
 local utils = require("custom.utils")
 
-utils.run_command({ "pass", "anthropic-key" }, function(output)
-  if output then
-    vim.schedule(function()
-      vim.env.ANTHROPIC_API_KEY = output
-      print("ANTHROPIC_API_KEY has been set")
-    end)
-  else
-    vim.schedule(function()
-      print("Failed to set ANTHROPIC_API_KEY")
-    end)
-  end
-end)
+-- utils.run_command({ "pass", "anthropic-key" }, function(output)
+--   if output then
+--     vim.schedule(function()
+--       vim.env.ANTHROPIC_API_KEY = output
+--       print("ANTHROPIC_API_KEY has been set")
+--     end)
+--   else
+--     vim.schedule(function()
+--       print("Failed to set ANTHROPIC_API_KEY")
+--     end)
+--   end
+-- end)
 
 return {
   "yetone/avante.nvim",
